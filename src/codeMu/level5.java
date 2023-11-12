@@ -30,7 +30,7 @@ public class level5 implements interfaceLevel5 {
 //        String result = element.mergeStrokes(list);
 //        System.out.println(result);
 
-        // TODO   Дано целое число, содержащее количество килобайт:
+        //  Дано целое число, содержащее количество килобайт:
         //        int kb = 35;
         //        Переведите это значение в байты.
         int kb = 35;
