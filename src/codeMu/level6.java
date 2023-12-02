@@ -1,8 +1,12 @@
 package codeMu;
 import codeMu.interfaces.interfaceLeve6;
+import org.postgresql.Driver;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Properties;
 
 public class level6 implements interfaceLeve6 {
 
@@ -24,9 +28,9 @@ public class level6 implements interfaceLeve6 {
 
 
         // Дано целое число, содержащее количество мегабайт. Переведите это значение в байты.
-        int mb = 35;
-        int result = level6.mbConvertToByte(mb);
-        System.out.println(result);
+//        int mb = 35;
+//        int result = level6.mbConvertToByte(mb);
+//        System.out.println(result);
     }
 
     @Override
