@@ -1,6 +1,5 @@
 package codeMu;
 import codeMu.interfaces.interfaceLeve6;
-import org.postgresql.Driver;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

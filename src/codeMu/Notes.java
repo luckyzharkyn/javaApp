@@ -29,6 +29,10 @@ public class Notes {
         // отрицательное цисло преобразовать в плюсовое
         Integer value1 = 9;
         int intValue = Math.abs(value1);
+
+        // конвертировать char в string
+        char g = 'b';
+        String o = String.valueOf(g);
     }
 
     static void putArray() {
