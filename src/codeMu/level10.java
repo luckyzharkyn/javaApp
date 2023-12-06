@@ -13,11 +13,15 @@ public class level10 {
         // Helper.show(findSecondOfYear());
 
         // №3 Дано некоторое целое число: Выведите в консоль все делители этого числа.
-        int num = 12;
-
+//        int num = 12;
+//        ArrayList<Integer> arrayList = findDelitely(num);
+//        for (Integer t : arrayList) {
+//            Helper.show(t);
+//        }
         // №4
         // Дано некоторое число:  Делите его на два столько раз, пока результат не будет меньше 10. Сколько итераций для этого потребуется?
-        // float num = 12345;
+//         float num = 12345;
+//         Helper.show(countIteration(num));
     }
 
     static int findSum() {
@@ -35,7 +39,24 @@ public class level10 {
     }
 
     static ArrayList<Integer> findDelitely(int value) {
-        Integer num = value;
-        return num;
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        int count = 1;
+        while (count <= value) {
+            if(value % count == 0) {
+                arrayList.add(count);
+            }
+            count++;
+        }
+        return arrayList;
+    }
+
+    static int countIteration(float num) {
+        float result = num;
+        int count = 0;
+        while (result >= 10) {
+            result /= 2;
+            count++;
+        }
+        return count;
     }
 }
