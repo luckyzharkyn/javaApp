@@ -18,6 +18,13 @@ public class Notes {
         // конвертировать string в int
         int q = Integer.parseInt("1");
 
+        // конвертировать int в string
+        int num = 12345;
+        // 1
+            String strNum = String.valueOf(num);
+        // 2
+            String strNum2 = Integer.toString(num);
+
         // конвертировать char в int
         char w = 'b';
         int e = Character.getNumericValue(w);
