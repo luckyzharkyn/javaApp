@@ -40,6 +40,10 @@ public class Notes {
         // конвертировать char в string
         char g = 'b';
         String o = String.valueOf(g);
+
+        // конвертировать массив в string
+        int[] arr = new int[10];
+        Helper.show(Arrays.toString(arr));
     }
 
     static void putArray() {
@@ -91,4 +95,5 @@ public class Notes {
             s = tr.toString();
 
     }
+
 }
