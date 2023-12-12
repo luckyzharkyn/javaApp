@@ -1,4 +1,6 @@
-package codeMu;
+package codeMu.level2;
+
+import codeMu.Helper;
 
 import java.util.Arrays;
 

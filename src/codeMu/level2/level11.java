@@ -1,4 +1,4 @@
-package codeMu;
+package codeMu.level2;
 
 public class level11 {
     public static void main(String[] args) {

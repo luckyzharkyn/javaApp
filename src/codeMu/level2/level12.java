@@ -1,4 +1,6 @@
-package codeMu;
+package codeMu.level2;
+
+import codeMu.Helper;
 
 public class level12 {
     public static void main(String[] args) {

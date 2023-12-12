@@ -1,4 +1,6 @@
-package codeMu;
+package codeMu.level1;
+
+import codeMu.Helper;
 
 import java.util.HashMap;
 import java.util.Map;

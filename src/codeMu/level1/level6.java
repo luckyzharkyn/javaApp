@@ -1,11 +1,7 @@
-package codeMu;
+package codeMu.level1;
 import codeMu.interfaces.interfaceLeve6;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Properties;
 
 public class level6 implements interfaceLeve6 {
 
