@@ -73,6 +73,10 @@ public class Notes {
             month.add(str1);
             month.add(str2);
             month.add(str3);
+
+            // 8
+            String hello = "Zharkyn";
+            char[] charList = hello.toCharArray();
     }
 
     static void Stroke() {
