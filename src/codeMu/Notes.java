@@ -10,8 +10,8 @@ public class Notes {
         Convertation(); // конвертация
         putArray(); // элементы положить в массив
         Stroke(); // работа со строками
-
-
+        workArray(); // работа с массивами
+        workMath(); // работа с цифрами
     }
 
     static void Convertation() {
@@ -108,6 +108,9 @@ public class Notes {
 
             // Найти позицию буквы
             int position = s.indexOf("r"); // position = 3
+
+            // проверить совпадение не учитывая регистр
+            boolean res1 = s.equalsIgnoreCase("zharkyn");
     }
 
     static void workArray() {
@@ -115,6 +118,12 @@ public class Notes {
         int[] array =  {1, 2, 3, 4, 5, 6};
         int[] newArray = Arrays.copyOfRange(array, 0, 3);
         //    newArray =  [1, 2, 3]
+    }
+
+    static void workMath() {
+        // округление
+        float i = 23.12f;
+        int res = Math.round(i); // 23
     }
 
 }
