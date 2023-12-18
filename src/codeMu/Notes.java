@@ -103,6 +103,11 @@ public class Notes {
             boolean low = Character.isLowerCase(str);
             boolean upper = Character.isUpperCase(str);
 
+            // Узнать что строка начинается с
+            boolean res = s.startsWith("Zha");
+
+            // Найти позицию буквы
+            int position = s.indexOf("r"); // position = 3
     }
 
     static void workArray() {
