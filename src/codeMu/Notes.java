@@ -98,6 +98,18 @@ public class Notes {
             tr.append(s).append(" is").append(" cool").reverse();
             s = tr.toString();
 
+            // Как узнать в верхнем регистре или в Нижнем
+            char str = 'b';
+            boolean low = Character.isLowerCase(str);
+            boolean upper = Character.isUpperCase(str);
+
+    }
+
+    static void workArray() {
+        // Срезать массив
+        int[] array =  {1, 2, 3, 4, 5, 6};
+        int[] newArray = Arrays.copyOfRange(array, 0, 3);
+        //    newArray =  [1, 2, 3]
     }
 
 }
