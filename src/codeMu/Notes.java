@@ -1,8 +1,6 @@
 package codeMu;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Notes {
@@ -109,6 +107,10 @@ public class Notes {
             // Найти позицию буквы
             int position = s.indexOf("r"); // position = 3
 
+            // Метод lastIndexOf возвращает индекс последнего вхождения указанного символа или строки.
+            String se = "1203405";
+            int lastOfIndex = se.lastIndexOf('0');
+
             // проверить совпадение не учитывая регистр
             boolean res1 = s.equalsIgnoreCase("zharkyn");
     }
@@ -124,6 +126,13 @@ public class Notes {
         // округление
         float i = 23.12f;
         int res = Math.round(i); // 23
+    }
+
+    static void setCollection() {
+        // оставить только одинаковые элементы с двух set
+        Set set1 = new HashSet();
+        Set set2 = new HashSet();
+        set1.retainAll(set2);
     }
 
 }
