@@ -113,6 +113,9 @@ public class Notes {
 
             // проверить совпадение не учитывая регистр
             boolean res1 = s.equalsIgnoreCase("zharkyn");
+
+            // содержит ли какое то значение
+            boolean res2 = s.contains("zh");
     }
 
     static void workArray() {
