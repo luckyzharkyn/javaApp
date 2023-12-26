@@ -116,6 +116,9 @@ public class Notes {
 
             // содержит ли какое то значение
             boolean res2 = s.contains("zh");
+
+            // является ли буква цифрой
+            boolean res3 = Character.isDigit(s.charAt(0));
     }
 
     static void workArray() {
