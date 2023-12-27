@@ -2,6 +2,8 @@ package codeMu.level4;
 
 import codeMu.Helper;
 
+import java.util.ArrayList;
+
 public class level32 {
     public static void main(String[] args) {
         //    №1 Выведите в консоль все числа в промежутке от 10 до 1000, у которых первая цифра четная.
@@ -36,22 +38,32 @@ public class level32 {
 //              }
 
         //    №4 Даны два массива:
-            int[] arr1 = {1, 2, 3, 4, 5};
-            int[] arr2 = {1, 2, 3};
-            // Проверьте, что все элементы первого массива есть во втором.
-            boolean res = true;
-            for(int i : arr1) {
-                for(int j : arr2) {
-                    if(arr1[i] != arr2[j]) {
-                        res = false;
-                    }
-                }
-            }
-            Helper.show(res);
+//            int[] arr1 = {1, 2, 3, 4, 5};
+//            int[] arr2 = {1, 2, 3};
+//            // Проверьте, что все элементы первого массива есть во втором.
+//            ArrayList<Integer> arrayList = new ArrayList<>();
+//            for(int i : arr1) {
+//                for(int j : arr2) {
+//                    if(i == j) {
+//                        arrayList.add(1);
+//                        break;
+//                    }
+//                }
+//            }
+//            if(arrayList.size() == arr1.length) {
+//                Helper.show("yes");
+//            } else {
+//                Helper.show("no");
+//            }
 
         //    №5 Дано целое число:
-        //    int num = 12345;
-        //    Поменяйте местами первую и последнюю цифру этого числа:
-        //    int 52341
+//            int num = 12345;
+//        //    Поменяйте местами первую и последнюю цифру этого числа:
+//        //    int 52341
+//            String s = String.valueOf(num);
+//            StringBuilder stringBuilder = new StringBuilder();
+//            stringBuilder.append(s.charAt(s.length() - 1)).append(s.substring(1, s.length() - 1)).append(s.charAt(0));
+//            String res = stringBuilder.toString();
+//            Helper.show(res);
     }
 }
