@@ -120,6 +120,10 @@ public class Notes {
 
             // является ли буква цифрой
             boolean res3 = Character.isDigit(s.charAt(0));
+
+            // как очистить StringBuilder
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.setLength(0);
     }
 
     static void workArray() {
