@@ -1,18 +1,31 @@
 package codeMu;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Helper {
+    /**
+     * для показа сообщения
+     * @param value Принимает значение любого типа
+     */
     public static <T> void show(T value) {
+
         System.out.println(value);
     }
 
+    /**
+     * для показа сообщении
+     * @param arrayList принимает массив значении любого типа
+     */
     public static <T> void showArray(ArrayList<T> arrayList) {
-        for(T element : arrayList) {
-            Helper.show(element);
-        }
+        arrayList.stream().forEach(Helper::show);
     }
 
+    /**
+     * объединяет строки
+     * @param values - принимает несколько строк
+     * @return - возвращает объединенную строку
+     */
     public static String mergeStroke(String... values) {
         StringBuilder s = new StringBuilder();
         for(String e : values) {
@@ -21,11 +34,12 @@ public class Helper {
         return s.toString();
     }
 
+    /**
+     * для получения суммы
+     * @param array - принимает массив чисел
+     * @return - возвращает сумму
+     */
     public static int sumArray(int[] array) {
-        int sum = 0;
-        for(int i = 0; i < array.length; i++) {
-            sum += array[i];
-        }
-        return sum;
+        return Arrays.stream(array).reduce((acc, elem) -> acc + elem).getAsInt();
     }
 }
