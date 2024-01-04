@@ -24,7 +24,7 @@ public class Notes {
             String strNum2 = Integer.toString(num);
 
         // конвертировать char в int
-        char w = 'b';
+        char w = '5';
         int e = Character.getNumericValue(w);
 
         // integer конвертировать в string
