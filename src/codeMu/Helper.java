@@ -9,7 +9,6 @@ public class Helper {
      * @param value Принимает значение любого типа
      */
     public static <T> void show(T value) {
-
         System.out.println(value);
     }
 
