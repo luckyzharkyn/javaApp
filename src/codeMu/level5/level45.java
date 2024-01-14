@@ -2,8 +2,7 @@ package codeMu.level5;
 
 import codeMu.Helper;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
@@ -33,14 +32,30 @@ public class level45 {
 //       }
 
         //№3 Дана некоторая строка:
-        //"abcdeabc"
+//        String s = "abcdeabc";
         //Очистите ее от дублей символов:
         //"abcde"
+//        Set<Character> set = new HashSet<>();
+//        for(int i = 0; i < s.length(); i++) {
+//            set.add(s.charAt(i));
+//        }
+//        Helper.show(set.toString());
+
 
         //№4 Дана некоторая строка:
-        //"abcde"
-        //Переведите в верхний регистр все нечетные буквы этой строки. В нашем случае должно получится следующее:
-        //"AbCdE"
+//        String s = "abcde";
+//        //Переведите в верхний регистр все нечетные буквы этой строки. В нашем случае должно получится следующее:
+//        //"AbCdE"
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for(int i = 0; i < s.length(); i++) {
+//            if(i % 2 == 0) {
+//                stringBuilder.append(Character.toUpperCase(s.charAt(i)));
+//            } else {
+//                stringBuilder.append(s.charAt(i));
+//            }
+//        }
+//        Helper.show(stringBuilder.toString());
+
     }
     static void EnterFigure(Scanner scanner) {
         if(scanner.hasNextInt()) {
