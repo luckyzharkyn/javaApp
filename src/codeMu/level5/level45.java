@@ -1,13 +1,11 @@
 package codeMu.level5;
 
 import codeMu.Helper;
-
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Stream;
 
 public class level45 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchAlgorithmException {
         //№1 Попросите у пользователя ввести через консоль целое число из промежутка от 1 до 10. Если будет введено что-то другое, то попросите пользователя ввести число еще раз.
 //        Helper.show("Введите число от 1 до 10");
 //        Scanner scanner = new Scanner(System.in);
@@ -55,7 +53,6 @@ public class level45 {
 //            }
 //        }
 //        Helper.show(stringBuilder.toString());
-
     }
     static void EnterFigure(Scanner scanner) {
         if(scanner.hasNextInt()) {
