@@ -7,7 +7,7 @@ import java.util.*;
 public class level41 {
     public static void main(String[] args) {
         //№1 Попросите у пользователя ввести через консоль два числа. Выведите сумму этих чисел.
-//        Scanner scanner = new Scanner(System.in);
+//        others.Scanner scanner = new others.Scanner(System.in);
 //        Helper.show("enter first value: = ");
 //        double firstValue = scanner.nextDouble();
 //        Helper.show("enter second value: = ");

@@ -8,7 +8,7 @@ public class level45 {
     public static void main(String[] args) throws NoSuchAlgorithmException {
         //№1 Попросите у пользователя ввести через консоль целое число из промежутка от 1 до 10. Если будет введено что-то другое, то попросите пользователя ввести число еще раз.
 //        Helper.show("Введите число от 1 до 10");
-//        Scanner scanner = new Scanner(System.in);
+//        others.Scanner scanner = new others.Scanner(System.in);
 //        EnterFigure(scanner);
         //№2
         //Сформируйте с помощью циклов следующий массив:

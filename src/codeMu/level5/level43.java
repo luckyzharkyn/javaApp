@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class level43 {
     public static void main(String[] args) {
         //№1 Попросите у пользователя ввести через консоль 10 чисел. В ответ выведите сумму этих чисел.
-//        Scanner scanner = new Scanner(System.in);
+//        others.Scanner scanner = new others.Scanner(System.in);
 //        ArrayList<Integer> arrayList = new ArrayList<>();
 //        for(int i = 0; i < 10; i++) {
 //            if(scanner.hasNextInt()) {
