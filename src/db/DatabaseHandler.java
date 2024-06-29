@@ -20,12 +20,13 @@ public class DatabaseHandler extends Configs {
         return dbConnection;
     }
 
-    public void signUpUser(String firstName, String lastName, String username, String password, String location, String gender) throws SQLException {
+    public void signUpUser(String firstName, String lastName, String username, String password, String location, String gender) {
         String insert = "INSERT INTO " + Const.USER_TABLE + "(" + Const.USERS_FIRSTNAME + "," + Const.USERS_LASTNAME + "," +
                 Const.USERS_USERNAME + "," + Const.USERS_PASSWORD + "," + Const.USERS_LOCATION + "," + Const.USERS_GENDER + ")" +
                 "VALUES(?,?,?,?,?,?)";
-        try {
-            PreparedStatement prSt = getDbConnection().prepareStatement(insert);
+
+        try (Connection connection = getDbConnection();
+             PreparedStatement prSt = connection.prepareStatement(insert)) {
             prSt.setString(1, firstName);
             prSt.setString(2, lastName);
             prSt.setString(3, username);
