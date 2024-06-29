@@ -3,10 +3,11 @@ package db;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DatabaseHandler extends Configs {
-    Connection dbConnection;
+    private Connection dbConnection;
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
         String connectionString = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName + "?verifyServerCertificate=false" +
@@ -14,30 +15,40 @@ public class DatabaseHandler extends Configs {
                 "&requireSSL=false" +
                 "&useLegacyDatetimeCode=false" +
                 "&serverTimezone=UTC" +
-                "&allowPublicKeyRetrieval=true";  // Добавлено здесь
+                "&allowPublicKeyRetrieval=true";
         Class.forName("com.mysql.cj.jdbc.Driver");
         dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
         return dbConnection;
     }
 
-    public void signUpUser(String firstName, String lastName, String username, String password, String location, String gender) {
-        String insert = "INSERT INTO " + Const.USER_TABLE + "(" + Const.USERS_FIRSTNAME + "," + Const.USERS_LASTNAME + "," +
-                Const.USERS_USERNAME + "," + Const.USERS_PASSWORD + "," + Const.USERS_LOCATION + "," + Const.USERS_GENDER + ")" +
-                "VALUES(?,?,?,?,?,?)";
-
+    public <T> T executeQuery(String query, ResultSetProcessor<T> processor, Object... params) {
         try (Connection connection = getDbConnection();
-             PreparedStatement prSt = connection.prepareStatement(insert)) {
-            prSt.setString(1, firstName);
-            prSt.setString(2, lastName);
-            prSt.setString(3, username);
-            prSt.setString(4, password);
-            prSt.setString(5, location);
-            prSt.setString(6, gender);
-            prSt.executeUpdate();
-        } catch (SQLException e) {
+             PreparedStatement prSt = connection.prepareStatement(query)) {
+
+            for (int i = 0; i < params.length; i++) {
+                prSt.setObject(i + 1, params[i]);
+            }
+
+            ResultSet resultSet = prSt.executeQuery();
+            return processor.process(resultSet);
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            return null;
+        }
+    }
+
+    public int executeUpdate(String query, Object... params) {
+        try (Connection connection = getDbConnection();
+             PreparedStatement prSt = connection.prepareStatement(query)) {
+
+            for (int i = 0; i < params.length; i++) {
+                prSt.setObject(i + 1, params[i]);
+            }
+
+            return prSt.executeUpdate();
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+            return -1;
         }
     }
 }
