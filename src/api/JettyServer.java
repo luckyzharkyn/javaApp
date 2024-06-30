@@ -12,8 +12,9 @@ public class JettyServer {
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
 
-        // Добавляем свой сервлет
+        // Добавляем сервлеты
         context.addServlet(new ServletHolder(new HelloServlet()), "/hello");
+        context.addServlet(new ServletHolder(new AnotherApiServlet()), "/api/another");
 
         server.setHandler(context);
 
