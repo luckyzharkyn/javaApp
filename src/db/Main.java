@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        DatabaseHandler dbHandler = new DatabaseHandler();
+        DatabaseHandler dbHandler = DatabaseHandler.getDatabaseHandler();
 
         // Пример выполнения запроса на вставку
         String insertQuery = "INSERT INTO users (firstName, lastName, username, password, location, gender) VALUES (?, ?, ?, ?, ?, ?)";

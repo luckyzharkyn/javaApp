@@ -9,6 +9,10 @@ import java.sql.SQLException;
 public class DatabaseHandler extends Configs {
     private Connection dbConnection;
 
+    public static DatabaseHandler getDatabaseHandler() {
+        return new DatabaseHandler();
+    }
+
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
         String connectionString = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName + "?verifyServerCertificate=false" +
                 "&useSSL=false" +
