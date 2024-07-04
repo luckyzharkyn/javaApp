@@ -1,7 +1,7 @@
 package reviseLessons;
 
 import db.DatabaseHandler;
-import reviseLessons.dto.City;
+import DTO.City;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 public class level2 {
     public static void main(String[] args) {
         // №1 Дано целое число. Выведите в консоль первую цифру этого числа.
-        task1();
+//        task1();
         // №2 Дано целое число. Выведите в консоль последнюю цифру этого числа.
 
         // №3 Дано целое число. Выведите в консоль сумму первой и последней цифры этого числа.
@@ -40,4 +40,6 @@ public class level2 {
             System.out.println(city.getName());
         }
     }
+
+
 }

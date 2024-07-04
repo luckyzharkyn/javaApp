@@ -1,10 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level34 {
     public static void main(String[] args) {
         //    №1 Дана строка. Удалите из нее все гласные буквы.

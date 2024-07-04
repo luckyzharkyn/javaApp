@@ -1,11 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
-
 public class level40 {
     public static void main(String[] args) {
         //№1 Дан некоторый массив, например, вот такой:

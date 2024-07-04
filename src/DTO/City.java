@@ -1,4 +1,4 @@
-package reviseLessons.dto;
+package DTO;
 
 public class City {
     int id;

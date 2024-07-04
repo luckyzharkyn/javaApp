@@ -1,9 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-
 public class level23 {
     public static void main(String[] args) {
         //    №1 Дано целое число:

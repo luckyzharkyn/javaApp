@@ -1,9 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-
 public class level36 {
     public static void main(String[] args) {
         //№1 Дана строка. Проверьте, что эта строка состоит только из цифр.

@@ -1,10 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level21 {
     public static void main(String[] args) {
         //    №1 Дан массив с целыми числами. Выведите в консоль только те числа, которые делятся на 5.

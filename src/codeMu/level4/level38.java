@@ -1,13 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
 public class level38 {
     public static void main(String[] args) {
         //№1 Дана строка с буквами:

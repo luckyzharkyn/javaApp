@@ -1,6 +1,6 @@
 package others.workStream;
 
-import codeMu.Helper;
+import services.Helper;
 
 import java.util.*;
 import java.util.stream.Collectors;

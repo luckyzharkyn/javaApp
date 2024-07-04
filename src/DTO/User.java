@@ -1,4 +1,4 @@
-package db;
+package DTO;
 
 public class User {
     private String firstName;

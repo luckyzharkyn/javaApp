@@ -1,9 +1,5 @@
 package codeMu.level5;
 
-import codeMu.Helper;
-
-import java.util.*;
-
 public class level41 {
     public static void main(String[] args) {
         //№1 Попросите у пользователя ввести через консоль два числа. Выведите сумму этих чисел.

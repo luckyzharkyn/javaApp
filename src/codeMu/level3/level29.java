@@ -1,9 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-
 public class level29 {
     public static void main(String[] args) {
         //    №1 Дана некоторая строка, например, вот такая:

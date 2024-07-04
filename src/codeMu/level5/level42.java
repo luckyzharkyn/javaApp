@@ -1,12 +1,5 @@
 package codeMu.level5;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
-
 public class level42 {
     public static void main(String[] args) {
         //№1 Попросите у пользователя ввести через консоль 10 чисел. Заполните массив этими числами.

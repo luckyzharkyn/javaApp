@@ -1,10 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level31 {
     public static void main(String[] args) {
         //    №1 Дана некоторая строка с буквами и цифрами. Получите позицию первой цифры в этой строке.

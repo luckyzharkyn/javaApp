@@ -26,13 +26,7 @@ public class AnotherApiServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("application/json");
 
-        // Читаем тело запроса
-        BufferedReader reader = req.getReader();
-        StringBuilder requestBody = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            requestBody.append(line);
-        }
+        StringBuilder requestBody = ReadBody.getRequest(req);
 
         // Создаем JSON объект из тела запроса
         JSONObject jsonRequest = new JSONObject(requestBody.toString());

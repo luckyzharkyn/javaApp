@@ -1,7 +1,5 @@
 package codeMu.level2;
 
-import codeMu.Helper;
-
 public class level16 {
     public static void main(String[] args) {
         //        №1 Дан массив с числами:

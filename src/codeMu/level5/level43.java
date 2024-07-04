@@ -1,11 +1,5 @@
 package codeMu.level5;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class level43 {
     public static void main(String[] args) {
         //№1 Попросите у пользователя ввести через консоль 10 чисел. В ответ выведите сумму этих чисел.

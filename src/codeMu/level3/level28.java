@@ -1,10 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level28 {
     public static void main(String[] args) {
         //    №1 Дан массив с целыми числами. Проверьте, что все числа из этого массива содержат в себе цифру 3.

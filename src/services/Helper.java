@@ -1,7 +1,8 @@
-package codeMu;
+package services;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import static java. lang.System.*;
 
 public class Helper {
     /**
@@ -9,7 +10,11 @@ public class Helper {
      * @param value Принимает значение любого типа
      */
     public static <T> void show(T value) {
-        System.out.println(value);
+        out.println(value);
+    }
+
+    public static <T> void show(String text, T value) {
+        out.println(text + "::: " + value);
     }
 
     /**

@@ -1,12 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 public class level30 {
     public static void main(String[] args) {
 //        //    №1 Дано целое число:

@@ -1,10 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level35 {
     public static void main(String[] args) {
     //    №1 Выведите в консоль все числа от 1 до 1000, сумма цифр которых равна 13.

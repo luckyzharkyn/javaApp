@@ -1,6 +1,6 @@
 package others.nested_classes.static_nestes_class;
 
-import codeMu.Helper;
+import services.Helper;
 
 public class Car {
     String color;

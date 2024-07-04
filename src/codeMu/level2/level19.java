@@ -1,9 +1,5 @@
 package codeMu.level2;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-
 public class level19 {
     public static void main(String[] args) {
         // №1 С помощью цикла заполните массив четными числами из промежутка от 1 до 100.

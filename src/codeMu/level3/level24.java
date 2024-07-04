@@ -1,10 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import javax.security.auth.callback.CallbackHandler;
-import java.util.Arrays;
-
 public class level24 {
     public static void main(String[] args) {
         //    №1 Дан массив с числами

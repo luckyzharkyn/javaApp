@@ -1,9 +1,5 @@
 package codeMu.level3;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-
 public class level22 {
     public static void main(String[] args) {
         //    №1 Дан массив со строками. Выведите в консоль только те строки, которые начинаются на "http://".

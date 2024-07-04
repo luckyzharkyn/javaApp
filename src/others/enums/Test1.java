@@ -1,6 +1,6 @@
 package others.enums;
 
-import codeMu.Helper;
+import services.Helper;
 
 public class Test1 {
     void method(String dayOfWeek) {

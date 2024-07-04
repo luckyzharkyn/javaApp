@@ -1,11 +1,5 @@
 package codeMu.level5;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 public class level46 {
     public static void main(String[] args) {
         //№1 Напишите программу, которая будет находить корни квадратного уравнения.

@@ -1,6 +1,6 @@
 package others.Scanner;
 
-import codeMu.Helper;
+import services.Helper;
 
 import java.io.File;
 import java.io.FileNotFoundException;

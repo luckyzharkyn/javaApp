@@ -1,10 +1,6 @@
 package codeMu.level2;
 
-import codeMu.Helper;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class level20 {
     public static void main(String[] args) {

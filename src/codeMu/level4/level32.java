@@ -1,9 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-
 public class level32 {
     public static void main(String[] args) {
         //    №1 Выведите в консоль все числа в промежутке от 10 до 1000, у которых первая цифра четная.

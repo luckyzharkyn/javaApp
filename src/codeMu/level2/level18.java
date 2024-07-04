@@ -1,10 +1,5 @@
 package codeMu.level2;
 
-import codeMu.Helper;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class level18 {
     public static void main(String[] args) {
         // №1 Дан массив со строками:

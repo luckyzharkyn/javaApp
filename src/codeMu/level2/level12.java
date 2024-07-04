@@ -1,6 +1,6 @@
 package codeMu.level2;
 
-import codeMu.Helper;
+import services.Helper;
 
 public class level12 {
     public static void main(String[] args) {

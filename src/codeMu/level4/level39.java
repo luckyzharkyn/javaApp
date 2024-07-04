@@ -1,15 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-import codeMu.Month;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
-
 public class level39 {
     public static void main(String[] args) {
         //№1 Дана строка с буквами и цифрами:

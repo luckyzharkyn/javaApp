@@ -1,12 +1,5 @@
 package codeMu.level5;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 public class level44 {
     public static void main(String[] args) {
         //№1 Дано некоторое целое число:

@@ -1,7 +1,6 @@
 package db;
 
-import db.DatabaseHandler;
-import db.ResultSetProcessor;
+import DTO.User;
 
 import java.util.ArrayList;
 import java.util.List;

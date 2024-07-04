@@ -1,10 +1,5 @@
 package codeMu.level4;
 
-import codeMu.Helper;
-
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 public class level37 {
     public static void main(String[] args) {
     //    №1 Дан массив с целыми числами:
