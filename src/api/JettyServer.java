@@ -1,5 +1,6 @@
 package api;
 
+import api.auth.Registration;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -17,6 +18,7 @@ public class JettyServer {
         context.addServlet(new ServletHolder(new HelloServlet()), "/hello");
         context.addServlet(new ServletHolder(new AnotherApiServlet()), "/api/another");
         context.addServlet(new ServletHolder(new GetCity()), "/api/getCity");
+        context.addServlet(new ServletHolder(new Registration()), "/api/registration");
 
         // Добавляем CORS-фильтр
         FilterHolder corsFilterHolder = new FilterHolder(new CORSFilter());

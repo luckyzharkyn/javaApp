@@ -1,6 +1,7 @@
 package db;
 
 import DTO.City;
+import DTO.SiteUser;
 import DTO.User;
 import services.Helper;
 
@@ -20,7 +21,6 @@ public class GetTableData {
         str.append(")");
 
         String selectQuery = "SELECT * FROM world.city WHERE id IN " + str.toString() + ";";
-        Helper.show("selectQuery", selectQuery);
         List<City> cities = dbHandler.executeQuery(selectQuery, resultSet -> {
             List<City> cityList = new ArrayList<>();
             while (resultSet.next()) {
@@ -36,5 +36,28 @@ public class GetTableData {
         });
 
         return cities;
+    }
+
+    public static List<SiteUser> getAllUsers() {
+        DatabaseHandler dbHandler = DatabaseHandler.getDatabaseHandler();
+
+        String sqlQuery = "SELECT * FROM buysale.users;";
+
+        List<SiteUser> users = dbHandler.executeQuery(sqlQuery, resultSet -> {
+            List<SiteUser> list = new ArrayList<>();
+            while (resultSet.next()) {
+                SiteUser user = new SiteUser();
+                user.setId(resultSet.getString("id"));
+                user.setName(resultSet.getString("name"));
+                user.setSurname(resultSet.getString("surname"));
+                user.setLogin(resultSet.getString("login"));
+                user.setPassword(resultSet.getString("password"));
+                user.setEmail(resultSet.getString("email"));
+                list.add(user);
+            }
+            return list;
+        });
+
+        return users;
     }
 }

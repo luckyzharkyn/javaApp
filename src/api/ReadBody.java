@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class ReadBody {
-    static StringBuilder getRequest(HttpServletRequest req) throws IOException {
+    public static StringBuilder getRequest(HttpServletRequest req) throws IOException {
         // Читаем тело запроса
         BufferedReader reader = req.getReader();
         StringBuilder requestBody = new StringBuilder();

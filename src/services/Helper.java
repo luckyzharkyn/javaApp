@@ -2,6 +2,8 @@ package services;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.UUID;
+
 import static java. lang.System.*;
 
 public class Helper {
@@ -45,5 +47,10 @@ public class Helper {
      */
     public static int sumArray(int[] array) {
         return Arrays.stream(array).reduce((acc, elem) -> acc + elem).getAsInt();
+    }
+
+    public static String generateId() {
+        UUID uuid = UUID.randomUUID();
+        return uuid.toString();
     }
 }
